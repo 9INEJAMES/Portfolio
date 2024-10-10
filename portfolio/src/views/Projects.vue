@@ -5,32 +5,36 @@ import { ref } from 'vue'
 const projects = ref([
     {
         title: '2023 Vue Project I - MAIRUU AIM',
-        details: ['Create a match history to list the most recent playing scores, including mode, scores, coins, playtime, and date.', 'Adding a reset history function.', 'Improving CSS.'],
+        description: [
+            'An aiming game where players click targets to damage monsters. Players must clear all monsters to complete a stage.',
+            'Features include match history tracking and a reset history option.',
+        ],
+        technologies: ['Vue.js', 'JavaScript', 'Node.js', 'CSS'],
         links: [
-            { label: 'repository', url: 'https://github.com/9INEJAMES/PROJECT1-SEC-2-Mairuu' },
-            { label: 'preview', url: 'https://drive.google.com/file/d/1IMtLW2KtYJI6USXcsdsJZx_RerqxtEsY/view' },
+            { label: 'Repository', url: 'https://github.com/9INEJAMES/PROJECT1-SEC-2-Mairuu' },
+            { label: 'Preview', url: 'https://drive.google.com/file/d/1IMtLW2KtYJI6USXcsdsJZx_RerqxtEsY/view' },
         ],
     },
     {
         title: '2023 Vue Project II - Dim Sum (POS System)',
-        details: [
-            'Create a table operation system for employees, including table availability, table details, change order-items status, submit order.',
-            'Create an order management system for employees, including an order list and change order-items status.',
+        description: [
+            'A POS system for a dim sum restaurant that supports employee and order management as well as customer ordering.',
+            'Includes table management, order status updates, and functionality for admins and employees.',
         ],
+        technologies: ['Vue.js', 'JavaScript', 'Node.js', 'Json Server', 'CSS'],
         links: [
-            { label: 'repository', url: 'https://github.com/9INEJAMES/PROJECT2-SEC-2-Mairuu' },
-            { label: 'preview', url: 'https://drive.google.com/file/d/13A-dnV3qxfUE1h_pC-i49TGI2Oe3JQVE/view?pli=1' },
+            { label: 'Repository', url: 'https://github.com/9INEJAMES/PROJECT2-SEC-2-Mairuu' },
+            { label: 'Preview', url: 'https://drive.google.com/file/d/13A-dnV3qxfUE1h_pC-i49TGI2Oe3JQVE/view?pli=1' },
         ],
     },
     {
         title: '2024 Integrated Project - ITB KRADAN KANBAN',
-        details: [
-            'Design a database structure.',
-            'Developed a backend system segment for task board.',
-            'Implemented CRUD operations through REST APIs.',
-            'Create compose.yml for automation deployment.',
+        description: [
+            'A task board system featuring CRUD operations via REST APIs for comprehensive task management.',
+            'Includes a structured database design and automated deployment using a Docker Compose file.',
         ],
-        links: [{ label: 'repository', url: 'https://github.com/9INEJAMES/sj-1-integrated-1' }],
+        technologies: ['Vue.js', 'JavaScript', 'Java', 'Spring Boot', 'MySQL', 'Docker'],
+        links: [{ label: 'Repository', url: 'https://github.com/9INEJAMES/sj-1-integrated-1' }],
     },
 ])
 </script>
@@ -46,9 +50,12 @@ const projects = ref([
             >
                 <strong class="text-xl text-white mb-2 block">{{ project.title }}</strong>
                 <ul class="list-disc ml-6 mt-2 space-y-1 text-gray-300">
-                    <li v-for="detail in project.details" :key="detail">{{ detail }}</li>
+                    <li v-for="desc in project.description" :key="desc">{{ desc }}</li>
                 </ul>
-                <div class="flex space-x-4 mt-2">
+                <p class="mt-2 text-gray-400">
+                    Technologies Used: <span class="text-gray-300">{{ project.technologies.join(', ') }}</span>
+                </p>
+                <div class="flex flex-wrap space-x-4 mt-2">
                     <a v-for="link in project.links" :key="link.url" :href="link.url" target="_blank" class="text-blue-400 underline flex items-center space-x-1">
                         <span>{{ link.label }}</span>
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
