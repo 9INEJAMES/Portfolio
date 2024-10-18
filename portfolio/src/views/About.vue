@@ -21,7 +21,7 @@ const hardSkills = ref([
   'Programming Paradigms: OOP, Functional programming',
   'Languages: Java, JavaScript, SQL, HTML, CSS',
   'Frameworks: Vue.js, Spring Boot, Tailwind CSS, Bootstrap',
-  'Databases: MySQL Workbench',
+  'Databases: MySQL Workbench, MongoDB',
   'Commands: Git, Linux',
   'Tools: GitHub, IntelliJ, Visual Studio Code, Postman, Docker (Dockerfile, Compose)'
 ])
