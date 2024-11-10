@@ -14,7 +14,7 @@
       </h2>
       <p class="text-lg sm:text-xl mt-4 text-left max-w-2xl text-gray-400 leading-relaxed hover:text-gray-200">
         I am a third-year student pursuing a Bachelor's degree in Information Technology at King Mongkut's University of Technology Thonburi.
-        I have a strong passion for programming, particularly in Backend development.
+        I have a strong passion for programming, particularly in Software Engineer.
       </p>
       <!-- Uncomment to add interactive buttons -->
       <!-- <div class="mt-6 space-x-4">

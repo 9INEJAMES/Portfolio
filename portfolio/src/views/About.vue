@@ -19,7 +19,7 @@ const softSkills = ref([
 
 const hardSkills = ref([
   'Programming Paradigms: OOP, Functional programming',
-  'Languages: Java, JavaScript, SQL, HTML, CSS',
+  'Languages: Java, JavaScript, SQL, HTML, CSS, PHP',
   'Frameworks: Vue.js, Spring Boot, Tailwind CSS, Bootstrap',
   'Databases: MySQL Workbench, MongoDB',
   'Commands: Git, Linux',
@@ -38,7 +38,7 @@ const hardSkills = ref([
       </h3>
       <p>
         I am a third-year student pursuing a Bachelor's degree in Information Technology at King Mongkut's University of Technology Thonburi.
-        I have a strong passion for programming, particularly in Backend development. I am eager to apply my skills and knowledge in a practical environment and am seeking an internship opportunity.
+        I have a strong passion for programming, particularly in Software Engineer. I am eager to apply my skills and knowledge in a practical environment and am seeking an internship opportunity.
       </p>
     </section>
 
